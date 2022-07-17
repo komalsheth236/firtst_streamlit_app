@@ -29,12 +29,12 @@ streamlit.dataframe(my_data_rows)
 
 
 # add from fruity vice
-streamlite.header("fruity Vice")
+streamlit.header("fruity Vice")
 try:
   fruit_choice = streamlit.text_input ("what fruit to get info about?")
   fruit_rep = requests.get("https://www.fruityvice.com/api/fruit/"+ fruit_choice)
   json_body = pandas.json_normalize(fruit_rep.json())
-  strealite.dataframe(json_body)
+  streamlit.dataframe(json_body)
   
 except :
   pass
