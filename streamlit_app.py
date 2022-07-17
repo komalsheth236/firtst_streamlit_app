@@ -36,6 +36,8 @@ try:
   json_body = pandas.json_normalize(fruit_rep.json())
   strealite.dataframe(json_body)
   
+except :
+  pass
   
   
   
